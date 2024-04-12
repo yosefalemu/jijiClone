@@ -37,7 +37,7 @@ const Sidebar = () => {
               </div>
               <div className="flex-grow">
                 <h1 className="text-sm text-gray-500">{item.label}</h1>
-                <h3 className="text-sm font-semibold">{`${ads} ads`}</h3>
+                <h3 className="text-sm font-semibold text-gray-600">{`${ads} ads`}</h3>
               </div>
             </div>
           </div>
@@ -61,7 +61,7 @@ const Sidebar = () => {
               </div>
               <div className="flex-grow">
                 <h1 className="text-sm text-gray-500">{item.label}</h1>
-                <h3 className="text-sm font-semibold">{`${ads} ads`}</h3>
+                <h3 className="text-sm font-semibold text-gray-600">{`${ads} ads`}</h3>
               </div>
             </div>
           </div>

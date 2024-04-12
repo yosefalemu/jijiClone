@@ -1,8 +1,35 @@
+"use client";
 import { CirclePlus } from "lucide-react";
 import Link from "next/link";
 import MainBottom from "./MainBottom";
+import { useEffect, useState } from "react";
+import { useStore } from "@/hooks";
 
 const MainContent = () => {
+  const { changeScrollDirection } = useStore();
+  const [scrollDirection, setScrollDirection] = useState("down");
+
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
+
+    const updateScrollDirection = () => {
+      const scrollY = window.scrollY;
+      const newDirection = scrollY > lastScrollY ? "down" : "up";
+      setScrollDirection(newDirection);
+      lastScrollY = scrollY > 0 ? scrollY : 0;
+    };
+
+    window.addEventListener("scroll", updateScrollDirection, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", updateScrollDirection);
+    };
+  }, []);
+
+  useEffect(() => {
+    changeScrollDirection(scrollDirection);
+  }, [scrollDirection]);
+
   return (
     <div className="h-full flex flex-col gap-8">
       <div className="hidden xl:block">

@@ -1,32 +1,12 @@
-"use client";
 import MainContent from "@/components/MainContent";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import SideBarForSmallScreen from "@/components/SideBarSmallScreen";
 import Sidebar from "@/components/Sidebar";
 import { Input } from "@/components/ui/input";
 import { Search } from "lucide-react";
-import { useEffect, useState } from "react";
 
 export default function Home() {
   const country = "Ethiopia";
-  const [scrollDirection, setScrollDirection] = useState("down");
-
-  useEffect(() => {
-    let lastScrollY = window.scrollY;
-
-    const updateScrollDirection = () => {
-      const scrollY = window.scrollY;
-      setScrollDirection(scrollY > lastScrollY ? "down" : "up");
-      lastScrollY = scrollY > 0 ? scrollY : 0;
-    };
-
-    window.addEventListener("scroll", updateScrollDirection, { passive: true });
-
-    return () => {
-      window.removeEventListener("scroll", updateScrollDirection);
-    };
-  }, []);
-  console.log("SCROLL", scrollDirection);
 
   return (
     <>
@@ -57,7 +37,7 @@ export default function Home() {
           </div>
         </MaxWidthWrapper>
       </div>
-      <div className="bg-gray-200 h-fit py-3">
+      <div className="h-fit py-3">
         <MaxWidthWrapper>
           <div className="grid grid-cols-12 gap-4">
             <div className="col-span-12 xl:col-span-3">

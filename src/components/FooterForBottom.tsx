@@ -5,12 +5,16 @@ import { useState } from "react";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import Link from "next/link";
 import { FixedFooterItems } from "@/config";
+import { useStore } from "@/hooks";
 
 const FooterForBottom = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  const scrollDirection = useStore((state) => state.scrollDirection);
+  console.log("EXACT SCROLL DIRECTION", scrollDirection);
+
   const test = false;
   return (
-    <div className="bg-gray-200">
+    <div className="">
       <MaxWidthWrapper>
         <div className="relative flex items-center justify-between border-b border-customGreen py-4">
           <Image
@@ -182,16 +186,16 @@ const FooterForBottom = () => {
           </div>
         </div>
       )}
-      {!test && (
+      {scrollDirection === "up" && (
         <div className="fixed bottom-0 h-fit w-full bg-white">
           <MaxWidthWrapper>
-            <div className="flex items-center justify-evenly py-2">
+            <div className="flex items-center justify-evenly pt-4 pb-3">
               {FixedFooterItems.map((item, index) => (
                 <div
                   key={index}
-                  className="flex flex-col items-center text-customGreen"
+                  className="flex flex-col items-center text-gray-700"
                 >
-                  <item.icon />
+                  <item.icon size={24} />
                   <h1 className="text-sm">{item.label}</h1>
                 </div>
               ))}

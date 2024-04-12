@@ -166,21 +166,179 @@ export const SideBarItems: TSideBarItems[] = [
     label: "Electronics",
     value: "electronics",
     image: "/SidebarImages/electronics.png",
-    features: [],
+    features: [
+      {
+        label: "Accessories & Supplies for Electronics",
+        value: "accessoriesSuppliesForElectronics",
+        image: "/SidebarSubImages/accessories-and-supplies-electronics.png",
+      },
+      {
+        label: "Laptops & Computers",
+        value: "laptopsComputers",
+        image: "/SidebarSubImages/laptops.png",
+      },
+      {
+        label: "Tv & DVD equipment",
+        value: "tvDvdEquipment",
+        image: "/SidebarSubImages/tv.png",
+      },
+      {
+        label: "Audio & Music Equipment",
+        value: "audioMusicEquipment",
+        image: "/SidebarSubImages/audio.png",
+      },
+      {
+        label: "Computer Accessories",
+        value: "computerAccessories",
+        image: "/SidebarSubImages/computer-accessories.png",
+      },
+      {
+        label: "Computer Hardware",
+        value: "computerHardware",
+        image: "/SidebarSubImages/computer-hardware.png",
+      },
+      {
+        label: "Computer Moniter",
+        value: "computerMoniter",
+        image: "/SidebarSubImages/computer-monitors.png",
+      },
+      {
+        label: "Headphones",
+        value: "headphones",
+        image: "/SidebarSubImages/headphones.png",
+      },
+      {
+        label: "Newtwork Products",
+        value: "networkProducts",
+        image: "/SidebarSubImages/networking-products.png",
+      },
+      {
+        label: "Photo & Video Camera",
+        value: "photoVideoCamera",
+        image: "/SidebarSubImages/cameras.png",
+      },
+      {
+        label: "Printers & Scanners",
+        value: "printersScanners",
+        image: "/SidebarSubImages/printers-and-scanners.png",
+      },
+      {
+        label: "Security & Surveillance",
+        value: "securitySurveillance",
+        image: "/SidebarSubImages/security-and-surveillance.png",
+      },
+      {
+        label: "Software",
+        value: "software",
+        image: "/SidebarSubImages/software.png",
+      },
+      {
+        label: "Video games",
+        value: "videoGames",
+        image: "/SidebarSubImages/video-games.png",
+      },
+      {
+        label: "Video Game Consoles",
+        value: "videoGameConsoles",
+        image: "/SidebarSubImages/game-consoles.png",
+      },
+    ],
   },
   {
     id: 5,
     label: "Home, Furniture & Appliances",
     value: "homeFurnitureAppliances",
     image: "/SidebarImages/home.png",
-    features: [],
+    features: [
+      {
+        label: "Furniture",
+        value: "furniture",
+        image: "/SidebarSubImages/furniture.png",
+      },
+      {
+        label: "Garden Supplies",
+        value: "gardenSupplies",
+        image: "/SidebarSubImages/garden.png",
+      },
+      {
+        label: "Home accessories",
+        value: "homeAccessories",
+        image: "/SidebarSubImages/home-accessories.png",
+      },
+      {
+        label: "Home Appliances",
+        value: "homeAppliances",
+        image: "/SidebarSubImages/home-appliances.png",
+      },
+      {
+        label: "Kitchen Appliances",
+        value: "kitchenAppliances",
+        image: "/SidebarSubImages/kitchen-appliances.png",
+      },
+      {
+        label: "Kitchenware & Cookware",
+        value: "kitchenwareCookware",
+        image: "/SidebarSubImages/kitchen-and-dining.png",
+      },
+      {
+        label: "Household Chemicals",
+        value: "householdChemicals",
+        image: "/SidebarSubImages/household-chemicals.png",
+      },
+    ],
   },
   {
     id: 6,
     label: "Health & Beauty",
     value: "healthBeauty",
     image: "/SidebarImages/beauty.png",
-    features: [],
+    features: [
+      {
+        label: "Bath & Body",
+        value: "bathBody",
+        image: "/SidebarSubImages/bath-and-body.png",
+      },
+      {
+        label: "Fragrances",
+        value: "fragrances",
+        image: "/SidebarSubImages/fragrance.png",
+      },
+      {
+        label: "Hair Beauty",
+        value: "hairBeauty",
+        image: "/SidebarSubImages/hair-beauty.png",
+      },
+      {
+        label: "Make-up",
+        value: "makeup",
+        image: "/SidebarSubImages/makeup.png",
+      },
+      {
+        label: "Sexual Wellness",
+        value: "sexualWellness",
+        image: "/SidebarSubImages/sexual-welness.png",
+      },
+      {
+        label: "Skin Care",
+        value: "skinCare",
+        image: "/SidebarSubImages/skin-care.png",
+      },
+      {
+        label: "Tobacco Accessories",
+        value: "tobaccoAccessories",
+        image: "/SidebarSubImages/tobacco-accessories.png",
+      },
+      {
+        label: "Tools & Accessories",
+        value: "toolsAccessories",
+        image: "/SidebarSubImages/tools-and-accessories.png",
+      },
+      {
+        label: "Vitamins & Supplements",
+        value: "vitaminsSupplements",
+        image: "/SidebarSubImages/vitamins-and-supplements.png",
+      },
+    ],
   },
   {
     id: 7,
