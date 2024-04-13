@@ -16,7 +16,7 @@ const Footer = () => {
       <div className="lg:hidden h-fit">
         <FooterForBottom />
       </div>
-      <div className="hidden lg:block h-fit border border-yellow-500">
+      <div className="hidden lg:block h-fit">
         <div className="relative bg-gray-200 flex items-baseline justify-center pt-24 h-fit">
           <div className="relative h-36 w-3/5">
             <Image

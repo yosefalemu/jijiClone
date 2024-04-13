@@ -14,7 +14,7 @@ const FooterForBottom = () => {
 
   const test = false;
   return (
-    <div className="">
+    <div className="w-full">
       <MaxWidthWrapper>
         <div className="relative flex items-center justify-between border-b border-customGreen py-4">
           <Image

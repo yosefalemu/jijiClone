@@ -22,14 +22,19 @@ const Navbar = () => {
               <div className="">
                 <NavItems />
               </div>
-              <div className="relative rounded-full w-10 h-10 overflow-hidden cursor-pointer">
-                <Image
-                  src={"https://avatars.githubusercontent.com/u/125744573?v=4"}
-                  alt="userProfilePicture"
-                  fill
-                  className="object-contain object-center"
-                />
-              </div>
+              <Link href={"/profile"}>
+                <div className="relative rounded-full w-10 h-10 overflow-hidden cursor-pointer">
+                  <Image
+                    src={
+                      "https://avatars.githubusercontent.com/u/125744573?v=4"
+                    }
+                    alt="userProfilePicture"
+                    fill
+                    className="object-contain object-center"
+                  />
+                </div>
+              </Link>
+
               <div className="hidden lg:block">
                 <Button
                   variant={"secondary"}
