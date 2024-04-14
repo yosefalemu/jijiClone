@@ -22,7 +22,7 @@ const Sidebar = () => {
       {SideBarItems.map((item) => (
         <div
           key={item.id}
-          className="flex items-center pr-2 borde mb-1 h-16  hover:bg-gray-200 cursor-pointer"
+          className="flex items-center pr-2 borde mb-1 h-16  hover:bg-slate-100 cursor-pointer"
           onMouseEnter={() => setHoveredItemId(item.id)}
         >
           <div className="flex flex-grow items-center h-full">
@@ -48,7 +48,7 @@ const Sidebar = () => {
         {hoveredItem.map((item, index) => (
           <div
             key={index}
-            className="flex items-center pr-2 mb-1 h-16  hover:bg-gray-200 cursor-pointer"
+            className="flex items-center pr-2 mb-1 h-16  hover:bg-slate-100 cursor-pointer"
           >
             <div className="flex items-center gap-4 pl-1">
               <div className="relative w-10 h-10">

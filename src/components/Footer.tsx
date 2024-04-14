@@ -17,7 +17,7 @@ const Footer = () => {
         <FooterForBottom />
       </div>
       <div className="hidden lg:block h-fit">
-        <div className="relative bg-gray-200 flex items-baseline justify-center pt-24 h-fit">
+        <div className="relative bg-slate-100 flex items-baseline justify-center pt-24 h-fit">
           <div className="relative h-36 w-3/5">
             <Image
               fill

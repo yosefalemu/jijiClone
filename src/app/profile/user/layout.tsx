@@ -47,10 +47,12 @@ const ProfileLayout = ({
           <div className="col-span-12 lg:col-span-4 rounded-lg flex flex-col gap-y-4">
             <div className="bg-white h-fit flex flex-col gap-y-2 rounded-tl-2xl rounded-tr-2xl overflow-hidden">
               <div className="w-full flex justify-end cursor-pointer">
-                <div className="flex items-center gap-2 hover:bg-gray-300 p-4">
-                  <h1 className="uppercase text-xs font-bold">Settings</h1>
-                  <Settings />
-                </div>
+                <Link href={"/profile/settings/contact-details"}>
+                  <div className="flex items-center gap-2 hover:bg-gray-300 p-4">
+                    <h1 className="uppercase text-xs font-bold">Settings</h1>
+                    <Settings />
+                  </div>
+                </Link>
               </div>
               <div className="w-full flex items-center justify-center">
                 <div className="relative h-28 w-28 rounded-full overflow-hidden border-2 border-customGreen">
@@ -88,7 +90,7 @@ const ProfileLayout = ({
               </div>
             </div>
             <div className="bg-white h-fit flex flex-col gap-y-2 py-2">
-              <Link href={"/profile/follower"}>
+              <Link href={"/profile/user/follower"}>
                 <div className="flex items-center gap-x-4 py-4  px-5  border-b border-green-200">
                   <SquareUser />
                   <h1 className="text-sm font-semibold cursor-pointer hover:text-customGreen">
@@ -96,7 +98,7 @@ const ProfileLayout = ({
                   </h1>
                 </div>
               </Link>
-              <Link href={"/profile/myadvert"}>
+              <Link href={"/profile/user/myadvert"}>
                 <div className="flex items-center gap-x-4 py-4  px-5  border-b border-green-200">
                   <CalendarRange />
                   <h1 className="text-sm font-semibold cursor-pointer hover:text-customGreen">
@@ -104,7 +106,7 @@ const ProfileLayout = ({
                   </h1>
                 </div>
               </Link>
-              <Link href={"/profile/feedback"}>
+              <Link href={"/profile/user/feedback"}>
                 <div className="flex items-center gap-x-4 py-4 px-5">
                   <MessageCircleCode />
                   <h1 className="text-sm font-semibold cursor-pointer hover:text-customGreen">

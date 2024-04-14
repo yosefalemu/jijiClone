@@ -22,7 +22,7 @@ const Navbar = () => {
               <div className="">
                 <NavItems />
               </div>
-              <Link href={"/profile"}>
+              <Link href={"/profile/user"}>
                 <div className="relative rounded-full w-10 h-10 overflow-hidden cursor-pointer">
                   <Image
                     src={

@@ -6,7 +6,6 @@ import Image from "next/image";
 import { useState } from "react";
 
 const MyAdvert = () => {
-  const [selectedValue, setSelectedValue] = useState<string>("myFollowers");
   const hasItem = false;
   return (
     <div className="flex flex-col px-8">
