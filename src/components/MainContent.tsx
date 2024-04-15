@@ -35,7 +35,7 @@ const MainContent = () => {
       <div className="hidden xl:block">
         <div className="grid grid-cols-12 gap-3 h-56">
           <div className="col-span-9 relative">
-            <Link href={"/howTobuy"}>
+            <Link href={"/faq"}>
               <div className="absolute inset-0 bg-main-container-image h-full w-full bg-contain bg-center bg-no-repeat"></div>
               <div
                 className="absolute inset-0"
